@@ -1,0 +1,47 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    .imgLg{
+        // width: 40px;
+        width: 100px;
+        height: 100px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        background-image: url("https://th.bing.com/th/id/R.d59b8126625d9e02eebc78c8ed06a52f?rik=Wm1pGdme%2bzPgAA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fdownload_223174.png&ehk=Dw9E89Y8QngyigNfRb%2bgHZ5jYNK23YIInBVWyROhuNg%3d&risl=&pid=ImgRaw&r=0");
+        background-position: center;
+        border-radius: 50%;
+
+    }
+    .icon{   
+        a{
+            display: inline-block;
+            padding: 0 10px;
+            color: white;
+            &:hover{
+                color:darkred;
+            }
+        }
+        .css-i4bv87-MuiSvgIcon-root{
+            font-size: 2rem
+        }
+    }
+    .info{
+        a{
+            display: inline-block;
+            color: white;
+            margin:10px 10px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 20px;
+            &:hover{
+                color:darkred;
+
+            }
+        }
+        margin-bottom: 30px;
+    }
+    
+}

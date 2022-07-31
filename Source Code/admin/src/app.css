@@ -1,0 +1,13 @@
+
+.sideBar{
+    /* width: 20%; */
+}
+.contain{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}

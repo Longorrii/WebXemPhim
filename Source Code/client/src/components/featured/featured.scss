@@ -1,0 +1,152 @@
+@import "../../app.scss";
+
+.featured {
+  height: 90vh;
+  position: relative;
+  &::after{
+    background-image: linear-gradient(0deg,#0f0f0f,transparent);
+    bottom: 0;
+    content: "";
+    height: 60%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .category {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    select {
+      background-color: white;
+      cursor: pointer;
+      background-color: var(--main-color);
+      color: white;
+      border: 1px solid white;
+      border-radius: 2px;
+      margin-left: 20px;
+      padding: 10px;
+      font-size: 15px;
+     
+    }
+    option{
+      display: inline-block;
+      padding: 5px;
+      height: 30px;
+  }
+    span{
+      font-size: 20px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include tablet {
+        height: 50%;
+    }
+  }
+
+  .info {
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    color: white;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    @include tablet{
+      width:90%;
+    }
+
+    img {
+      width: 200px;
+      @include tablet{
+        display: none;
+      }
+    }
+
+    .desc {
+      margin: 20px 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      max-height: 100px;
+      word-wrap: break-word;
+      display: block;
+      display: -webkit-box;
+      // height: 16px*1.3*3;
+      // font-size: 16px;
+      line-height: 1.3;
+      -webkit-line-clamp: 4;  /* số dòng hiển thị */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top:10px;
+
+      @include tablet{
+        width: 80%;
+        font-size: 30px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      a{
+        text-decoration: none;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 10px;
+        cursor: pointer;
+        color: white;
+        &:hover{
+          // position: absolute;
+          transform: rotate(30deg);
+          transition: all 0.2s ease;
+          &.play{
+            color: #000;
+            background-color: aliceblue;
+          }
+        }
+
+        
+
+        &.play {
+          color: white;
+          background-color: var(--main-color);
+          // outline:none;
+          
+
+          
+          @include tablet{
+            color: #000;
+            background-color: white;
+          }
+        }
+        &.more {
+          background-color: yellow;
+          color: black;
+        }
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
